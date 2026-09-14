@@ -19,6 +19,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 0 8%;
 }
 
 header h1 {
@@ -74,7 +75,7 @@ nav a.active {
 }
 
 #about {
-    padding-bottom: 80px;
+    padding: 40px 8%;
 }
 
 #about h2 {
@@ -84,11 +85,85 @@ nav a.active {
     text-align: center;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-foto {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
 #about p {
     max-width: 850px;
     font-size: 20px;
 }
 
+#hobby {
+    padding: 80px 10%;
+}
+
+#hobby h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hobi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.forza-card {
+    background-image: url("assets/fh5.png");
+}
+
+.motogp-card {
+    background-image: url("assets/motogp25.jpg");
+}
+
+.fc24-card {
+    background-image: url("assets/fc24.png");
+}
+
+.ride-card {
+    background-image: url("assets/ride5.png");
+}
+
+.fivem-card {
+    background-image: url("assets/fivem.png");
+}
+
+.video-card {
+    background-image: url("assets/editing.png");
+}
+
+.hobi-card {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-content h3 {
+   text-align: center;
+   text-shadow: 2px 2px 4px; 
+}
+
+.card-content p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 175px;
+}
 footer {
     background-color: #C8DFDB;
     color: #3368A0;
